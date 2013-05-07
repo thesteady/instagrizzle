@@ -1,0 +1,15 @@
+<%= @username if @username %>
+<%= image_tag @image if @image %>
+
+
+
+<div id='form'>
+  <%= form_tag root_path do  %>
+
+  <%= label_tag :username %>
+  <%= text_field_tag :username %>
+
+  <%= submit_tag "Get" %>
+  <% end %>
+</div>
+
